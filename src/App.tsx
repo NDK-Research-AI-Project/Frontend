@@ -11,6 +11,8 @@ import Profile from './pages/Profile';
 import Settings from './pages/Settings';
 
 import DefaultLayout from './layout/DefaultLayout';
+import ViewDocument from './pages/Document/ViewDocument';
+import UploadDocument from './pages/Document/UploadDocument';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -43,7 +45,7 @@ function App() {
           element={
             <>
               <PageTitle title="YourAI | Document upload" />
-              <Calendar />
+              <UploadDocument />
             </>
           }
         />
@@ -52,7 +54,7 @@ function App() {
           element={
             <>
               <PageTitle title="YourAI | Document View" />
-              <Calendar />
+              <ViewDocument />
             </>
           }
         />
